@@ -1,0 +1,71 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+.text-pink{
+    color: #ff1448 !important;
+}
+.nav-link{
+    letter-spacing:2px;
+}
+#carouselExampleSlidesOnly{
+    height:500px;
+}
+/*STYLE THE BACK TO TOP BUTTON*/
+.back-to-top {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+}
+i {
+    color:thistle;
+    height:2rem;
+    width:2rem;
+    /*font-size: 2rem;*/
+    /*@include absoluteCenter;*/
+}
+footer {
+    background-color: #0d243d;
+    height: 230px;
+}
+.mb-3{
+    text-decoration:none
+}
+header {
+    z-index: 1000;
+}
+.dishCard{
+    height:250px;
+}
+.fa-instagram{
+    color:#bc2a8d;
+}
+.fa-whatsapp {
+    color: #128c7e
+}
+.fa-facebook {
+    color: #1877F2
+}
+.fa-envelope{
+    color:#EA4335
+}
