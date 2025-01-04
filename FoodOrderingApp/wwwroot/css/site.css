@@ -54,8 +54,8 @@ footer {
 header {
     z-index: 1000;
 }
-.dishCard{
-    height:250px;
+.dishCard {
+    height: 250px;
 }
 .fa-instagram{
     color:#bc2a8d;
@@ -68,4 +68,25 @@ header {
 }
 .fa-envelope{
     color:#EA4335
+}
+#recipe-list {
+    top:5rem;
+}
+#recipe-list ul::-webkit-scrollbar{
+    width:10px;
+}
+#recipe-list ul::-webkit-scrollbar-track{
+    background-color: #ffffff;
+}
+#recipe-list ul::-webkit-scrollbar-thumb{
+    background-color:#ff1448;
+    border-radius:10px;
+}
+.recipe-item:hover{
+    background-color:#0d243d;
+    border-radius:10px;
+}
+.recipe-item:hover a{
+    color:#ffffff !important;
+    
 }

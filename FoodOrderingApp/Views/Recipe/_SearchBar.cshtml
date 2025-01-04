@@ -1,0 +1,32 @@
+﻿<div class="shadow rounded">
+    <div class="p-2">
+        <form autocomplete="off">
+            <div class="mb-2 row">
+                <div class="col-11 text-center ui-widget">
+                    <input type="text" id="tags" placeholder="Search Recipe" class="form-control" name="recipe" />
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-sm btn-success p-2">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $( function() {
+      var availableTags = [
+        "Pounded yam & Egusi with Assorted Meat","Pizza","Fried Rice & Salad with Roasted Meat",
+        "Jollof Rice & Carrot with Nice Fish","Jollof Rice & Dodo with Fried Fish",
+        "Ofada Rice & Carrot with Meat Sauce","White Rice & Stew with Big Meat",
+        "Balanced Diet Vegetable","Birthday Cake","Borger","chicken","chips","ice cream","pie",
+
+        "Scheme"
+      ];
+      $( "#tags" ).autocomplete({
+        source: availableTags,
+        minLength:1
+      });
+    } );
+</script>
+
