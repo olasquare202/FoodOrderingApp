@@ -26,3 +26,30 @@ function showRecipes(recipes, id) {
         }
     });
 }
+
+let apiURL = "https://forkify-api.herokuapp.com/api/v2/recipes"
+let apikey = "5ed6604591c37cdc054bc886"
+async function getOrderRecipe(id, showId) {
+    
+    let resp = await fetch(`${apiURL}/${id}?key=${apikey}`);
+    let result = await resp.json();
+    //console.log(result);
+    let recipe = result.data.recipe;
+    showOrderRecipeDetails(recipe, showId);
+}
+function showOrderRecipeDetails(orderRecipeDetails, showId) {
+   // console.log(orderRecipeDetails)
+    $.ajax({
+        url: '/Recipe/ShowOrder',
+        data: orderRecipeDetails,
+        dataType: 'html',
+        type: 'POST',
+      
+        success: function (htmlResult) {
+            //console.log(htmlResult);
+            $("#" + showId).html(htmlResult);
+        }
+            
+        
+    });
+}
